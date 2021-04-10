@@ -6,5 +6,10 @@ async def on_ready():
   
     general_channel = client.get_channel(830510316659408936)
     await general_channel.send("Online right now !!")
-
+@client.event 
+async def on_message(message):
+    if message.content == 'What is the version':
+        general_channel = client.get_channel(830510316659408936)
+        await general_channel.send("The version is 1.0")
+ 
 client.run("ODMwNTAyMTY4NDU2NzI0NTAw.YHHnag.OnS0C0uEeJomAfLi2y5QVdO1GMs")
