@@ -32,4 +32,4 @@ async def on_message(message):
         await general_channel.send(embed=myEmbed)
     await client.process_commands(message)
  
-client.run("ODMwNTAyMTY4NDU2NzI0NTAw.YHHnag.OnS0C0uEeJomAfLi2y5QVdO1GMs")
+client.run("TOKEN")
