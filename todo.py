@@ -1,9 +1,9 @@
-import discord 
+rimport discord 
 import pymongo
 # import datatime.datetime as dt
 from datetime import date
 from discord.ext import commands
-mongo = pymongo.MongoClient("mongodb+srv://vishwajeet:Mjklop@cluster0.pkcgw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongo = pymongo.MongoClient("Mongo_Server")
 
 db = mongo["Todo-List"]
 
@@ -46,4 +46,4 @@ async def view(context):
         myEmbed.add_field(name="Tasks ",value="You have no tasks scheduled for today.",inline=False)
         await context.message.channel.send(embed=myEmbed)
     # inputData["Time_in"] = dt.now().replace("-","/")
-client.run("ODMwNTAyMTY4NDU2NzI0NTAw.YHHnag.OnS0C0uEeJomAfLi2y5QVdO1GMs")
+client.run("TOKEN")
